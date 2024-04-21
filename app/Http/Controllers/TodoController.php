@@ -9,6 +9,7 @@ class TodoController extends Controller
 {
     public function index()
     {
+        //retrun "681520";
         $todos = Todo::all();
         return response()->json(['todos' => $todos]);
         //return view('todos.index', ['todos' => $todos]);
